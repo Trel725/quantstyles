@@ -5,6 +5,8 @@ import os
 
 from get_cpt import get_cmap
 
+print("Converting CPTs to .py...")
+
 cmaps = dict()
 cmps = []
 cmaps["singlecolor"] = []

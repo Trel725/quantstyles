@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+from subprocess import check_call
 
 with open('README.md') as readme_file:
     README = readme_file.read()
@@ -8,7 +9,7 @@ with open('HISTORY.md') as history_file:
 
 setup_args = dict(
     name='quantstyles',
-    version='0.1',
+    version='0.102',
     description='Matplotlib styles for scientific usage',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,
@@ -22,14 +23,14 @@ setup_args = dict(
 )
 
 install_requires = [
-    'numpy',
-    'os',
     'matplotlib',
-    'glob'
-    'urllib'
 ]
 
 if __name__ == '__main__':
+
+    check_call("python generate_quantcmaps.py".split(),
+               cwd="quantstyles")
+
     setup(**setup_args,
           install_requires=install_requires,
           include_package_data=True)
