@@ -1,0 +1,3 @@
+[submodule "get_cpt"]
+	path = get_cpt
+	url = https://github.com/bouziot/get-cpt.git
