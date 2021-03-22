@@ -17,14 +17,19 @@ setup_args = dict(
     author='Andrii Trelin',
     author_email='andrii.trelin@uni-rostock.de',
     keywords=[],
-    url='https://github.com/ncthuc/elastictools',
-    download_url='https://pypi.org/project/elastictools/'
+    url='https://github.com/Trel725/quantstyles',
+    download_url='https://pypi.org/project/quantstyles/'
 )
 
 install_requires = [
-    'elasticsearch>=6.0.0,<7.0.0',
-    'jinja2'
+    'numpy',
+    'os',
+    'matplotlib',
+    'glob'
+    'urllib'
 ]
 
 if __name__ == '__main__':
-    setup(**setup_args, install_requires=install_requires)
+    setup(**setup_args,
+          install_requires=install_requires,
+          include_package_data=True)
