@@ -2,9 +2,11 @@
 
 A set of slightly customized colormaps and styles, developed for internal use by Quantum Technology research group in the University of Rostock.
 
-<img src="https://raw.githubusercontent.com/Trel725/quantstyles/master/quantstyles/quant_cmaps.png" width="50%">
+<img src="https://raw.githubusercontent.com/Trel725/quantstyles/master/quantstyles/quant_cmaps.png" width="60%" style="@media (max-width: 1080px) {width=100%}">
 
 It includes the set of colormaps + custom matplotlib style.
+
+<img src="https://raw.githubusercontent.com/Trel725/quantstyles/master/img/demo.png" width="90%" style="@media (max-width: 1080px) {width=100%}">
 
 ## Usage
 
