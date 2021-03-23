@@ -81,6 +81,7 @@ def plot_color_gradients(cmaps):
 
 plot_color_gradients(cmaps)
 
+os.remove("quantcmaps.py")
 for cmap_category in cmaps:
     cmap_list = cmaps[cmap_category]
     for cmap in cmap_list:

@@ -1,1 +1,2 @@
 include quantstyles/colormaps/*
+include quantstyles/mpl_styles/*
