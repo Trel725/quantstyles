@@ -12,7 +12,8 @@ It includes the set of colormaps + custom matplotlib style.
 
 Import the package in your script  
 `import quantstyles`  
-Package automatically exports all the colormaps, i.e. they could be normally used by their names, e.g. `plt.show(data, cmap="quantjet")`
+Package automatically exports all the colormaps, i.e. they could be normally used by their names, e.g.   
+`plt.show(data, cmap="quantjet")`  
 Custom matplotlib style will be registered during first import of the package. It can be then activated as   
 `plt.style.use("quant")`
 
@@ -42,14 +43,14 @@ This project depends on
 
 ## Development
 If you'd like to manually go through all the steps:  
-0. Clone the repo by `git clone https://github.com/Trel725/quantstyles.git --recursive` Recursive is needed to sync get-cpt repo.
-1. Generate colormaps by executing Julia code in colormaps folder  
+1. Clone the repo by `git clone https://github.com/Trel725/quantstyles.git --recursive` Recursive is needed to sync get-cpt repo.
+2. Generate colormaps by executing Julia code in colormaps folder  
 ```
 cd colormaps
 julia colormaps.jl
 ```
 PerceptualColourMaps.jl and PyPlot.jl need to be installed. See that code for more details, or just use pre-generated colormaps in the colormaps directory.  
-2. Generate Python representation of the colormaps by running `python generate_quantcmaps.py`. This will produce actual file containing colormaps, quantcmaps.py  The command requires numpy, os, glob and (probably) urllib (from get-cpt).
-3. Import quantcmaps in your script. All the listed colormaps will be available as usual, e.g. `plt.imshow(data, cmap="quantjet")`  
-4. Custom style need to be copied to the matplotlib config dir. See [official manuals](https://matplotlib.org/stable/tutorials/introductory/customizing.html) for details.
-5. Additionally you can try to build pip wheel by executing `make` in the project top directory.
+3. Generate Python representation of the colormaps by running `python generate_quantcmaps.py`. This will produce actual file containing colormaps, quantcmaps.py  The command requires numpy, os, glob and (probably) urllib (from get-cpt).
+4. Import quantcmaps in your script. All the listed colormaps will be available as usual, e.g. `plt.imshow(data, cmap="quantjet")`  
+5. Custom style need to be copied to the matplotlib config dir. See [official manuals](https://matplotlib.org/stable/tutorials/introductory/customizing.html) for details.  
+6. Additionally you can try to build pip wheel by executing `make` in the project top directory.
