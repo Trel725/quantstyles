@@ -6,3 +6,6 @@ all:
 
 clean:
 	rm -r build *.egg-info dist
+
+install:
+	pip install dist/*.whl

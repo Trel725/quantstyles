@@ -34,10 +34,13 @@ hatch.linewidth        : 1.0
 
 ## FONTS
 
-font.size           : 8
-font.family         : serif
+font.size           : 7 
+font.family         : sans-serif
 font.stretch        : condensed
 text.color          : 555555
+
+font.serif     : Liberation Serif, Times New Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Palatino, Charter, serif
+font.sans-serif: Helvetica, Arial, Liberation Sans, Nimbus Sans L, Lucida Grande, Verdana, Geneva, Lucid, sans-serif
 
 
 # AXES
@@ -106,11 +109,11 @@ boxplot.boxprops.linewidth: 0.4
 
 boxplot.capprops.color: 555555
 boxplot.capprops.linestyle: -
-boxplot.capprops.linewidth: 0.75
+boxplot.capprops.linewidth: 0.5
 
 boxplot.flierprops.color: 555555
 boxplot.flierprops.linestyle: none
-boxplot.flierprops.linewidth: 0.75
+boxplot.flierprops.linewidth: 0.5
 boxplot.flierprops.marker: x
 boxplot.flierprops.markeredgecolor: 555555
 boxplot.flierprops.markerfacecolor: auto
@@ -119,7 +122,7 @@ boxplot.flierprops.markersize: 2.0
 boxplot.meanline: False
 boxplot.meanprops.color: 9D0D15
 boxplot.meanprops.linestyle: -
-boxplot.meanprops.linewidth: 0.75
+boxplot.meanprops.linewidth: 0.5
 
 boxplot.meanprops.marker: s
 boxplot.meanprops.markerfacecolor: 9D0D15
@@ -128,7 +131,7 @@ boxplot.meanprops.markersize: 2.0
 
 boxplot.medianprops.color: 9D0D15
 boxplot.medianprops.linestyle: -
-boxplot.medianprops.linewidth: 1.25
+boxplot.medianprops.linewidth: 1.0
 
 boxplot.showbox: True
 boxplot.showcaps: True
@@ -140,7 +143,14 @@ boxplot.whiskerprops.linestyle: --
 boxplot.whiskerprops.linewidth: 0.75
 boxplot.whiskers: 0.75
 
+boxplot.notch: True
+
 # SAVING
 savefig.dpi: 500
 savefig.pad_inches : 0.02
 savefig.bbox        : tight
+
+# ETC
+
+svg.fonttype: none # keep texts editable, assumes 
+                   # fonts are installed

@@ -9,7 +9,7 @@ with open('HISTORY.md') as history_file:
 
 setup_args = dict(
     name='quantstyles',
-    version='0.104',
+    version='0.105',
     description='Matplotlib styles for scientific usage',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,

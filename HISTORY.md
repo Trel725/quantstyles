@@ -11,3 +11,7 @@ Initial release, includes
 
 ## 0.104
 - Added custom MPL style and its installer
+
+## 0.105
+- Switched to sans-serif fonts according to Nature recommendations
+- Corrected font size for the same reason
