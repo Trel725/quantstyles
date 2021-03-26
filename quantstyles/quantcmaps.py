@@ -13872,7 +13872,7 @@ _quantjetuniform_data = {'red': [[0.0, 0.33725490196078434, 0.33725490196078434]
 
 cmap_quantjetuniform = LinearSegmentedColormap("quantjetuniform", _quantjetuniform_data)
 cm.register_cmap(name="quantjetuniform", cmap=cmap_quantjetuniform)
-_quantparula_data = {'red': [[0.0, 0.18823529411764706, 0.18823529411764706],
+_quantparrot_data = {'red': [[0.0, 0.18823529411764706, 0.18823529411764706],
  [0.003921569, 0.19215686274509805, 0.19215686274509805],
  [0.007843137, 0.19215686274509805, 0.19215686274509805],
  [0.01176471, 0.19607843137254902, 0.19607843137254902],
@@ -14641,8 +14641,8 @@ _quantparula_data = {'red': [[0.0, 0.18823529411764706, 0.18823529411764706],
  [0.9960784, 0.0392156862745098, 0.0392156862745098],
  [1.0, 0.043137254901960784, 0.043137254901960784]]}
 
-cmap_quantparula = LinearSegmentedColormap("quantparula", _quantparula_data)
-cm.register_cmap(name="quantparula", cmap=cmap_quantparula)
+cmap_quantparrot = LinearSegmentedColormap("quantparrot", _quantparrot_data)
+cm.register_cmap(name="quantparrot", cmap=cmap_quantparrot)
 _quantplasma_data = {'red': [[0.0, 0.0, 0.0],
  [0.003921569, 0.0, 0.0],
  [0.007843137, 0.0, 0.0],

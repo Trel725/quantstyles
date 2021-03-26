@@ -2,6 +2,8 @@ using PerceptualColourMaps
 using PerceptualColourMaps: ch2ab, newcolourmapdef
 using Printf
 using PyPlot
+using ColorTypes
+
 #=
 Code for generating a set of different colormaps from pre-selected
 base colors. Totally based on the code from PerceptualColourMaps
@@ -204,12 +206,12 @@ quanthot = newcolourmapdef(
     sigma = 0,
 )
 #---
-# derivative of parula colormap from PerceptualColourMaps
+# derivative of "parula-like" colormap from PerceptualColourMaps
 # adjusted to university colors
-quantparula = newcolourmapdef(
-    desc = "quant-parula",
+quantparrot = newcolourmapdef(
+    desc = "quant-parrot",
     attributeStr = "linear",
-    hueStr = "quantparula",
+    hueStr = "quantparrot",
     colourspace = "LAB",
     colpts = [
         20 0 0
@@ -474,7 +476,7 @@ quantcyclicjet = newcolourmapdef(
 for mapdef in [
     quantbwr,
     quanthot,
-    quantparula,
+    quantparrot,
     quantplasma,
     quantcoolwarm,
     quantjetuniform,

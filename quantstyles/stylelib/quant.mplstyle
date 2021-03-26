@@ -1,6 +1,4 @@
 axes.prop_cycle: cycler('color', ['9D0D15', '4472C4', 'ED7D31', '70AD47', "564794", 'FFC000'])
-#axes.prop_cycle: cycler('color', ['9D0D15', '4472C4', 'ED7D31', '70AD47', "564794", '8498b5'])
-
 
 # orange bavaria
 #['E1876C','FFAE6C','35405E','6C8599','506B4C','290D86','856FBA','FCDF57'])
