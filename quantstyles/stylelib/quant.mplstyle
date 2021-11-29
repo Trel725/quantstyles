@@ -23,7 +23,7 @@ axes.prop_cycle: cycler('color', ['9D0D15', '4472C4', 'ED7D31', '70AD47', "56479
 
 
 # LINES
-lines.linewidth   : 0.75
+lines.linewidth   : 1.25
 lines.markersize  : 2.0
 
 # PATCHES
@@ -32,7 +32,7 @@ hatch.linewidth        : 1.0
 
 ## FONTS
 
-font.size           : 7 
+font.size           : 14 
 font.family         : sans-serif
 font.stretch        : condensed
 text.color          : 555555
@@ -43,7 +43,7 @@ font.sans-serif: Helvetica, Arial, Liberation Sans, Nimbus Sans L, Lucida Grande
 
 # AXES
 axes.edgecolor: 555555
-axes.linewidth      : 0.5
+axes.linewidth      : 1.0
 axes.titlepad       : 2.0     
 axes.labelpad       : 2.0     # space between label and axis
 axes.titlesize      : medium
@@ -51,31 +51,41 @@ axes.labelweight    : normal  # weight of the x and y labels
 axes.labelcolor     : 555555
 axes.axisbelow      : True   # whether axis gridlines and ticks are below
                               # the axes elements (lines, text, etc)
-axes.spines.top : False
-axes.spines.right: False 
+axes.spines.top : True
+axes.spines.right: True 
 
 axes.formatter.use_mathtext : True
 axes.formatter.limits : -3, 3 # limits when to start use scientific notation
 axes.autolimit_mode : data
 
+
 # TICKS
-xtick.major.size     : 2.5
-xtick.minor.size     : 1.5
-xtick.major.width    : 0.5
-xtick.minor.width    : 0.5   
+xtick.major.size     : 2.75
+xtick.minor.size     : 1.75
+xtick.major.width    : 0.75
+xtick.minor.width    : 0.75   
 xtick.direction: in
 xtick.major.pad      : 1.5   
 xtick.minor.pad      : 1.5   
 xtick.color          : 555555
+xtick.top            : True
+xtick.direction: in
+xtick.minor.visible  : False
+xtick.labelsize      : 12 
 
-ytick.major.size     : 2.5
-ytick.minor.size     : 1.5
-ytick.major.width    : 0.5
-ytick.minor.width    : 0.5   
+ytick.major.size     : 2.75
+ytick.minor.size     : 1.75
+ytick.major.width    : 0.75
+ytick.minor.width    : 0.75  
 ytick.direction: in
 ytick.major.pad      : 1.5   
 ytick.minor.pad      : 1.5   
 ytick.color          : 555555
+ytick.right          : True
+ytick.direction: in
+ytick.minor.visible  : False
+ytick.labelsize      : 12 
+
 
 # GRIDS
 grid.color       :   555555  # grid color
@@ -91,14 +101,15 @@ legend.markerscale   : 0.75
 
 # FIGURE
 figure.facecolor: white
-figure.figsize: 3.25, 2.4
-figure.dpi       : 120 
+figure.figsize      : 3.25, 2.4
+figure.dpi          : 120
 figure.frameon: False
+
 
 
 # IMAGE
 #image.cmap   : quantjetuniform
-image.cmap  : quantplasma
+image.cmap   : quantplasma
 
 # BOXPLOT
 boxplot.boxprops.color: 555555
@@ -144,9 +155,12 @@ boxplot.whiskers: 0.75
 boxplot.notch: True
 
 # SAVING
-savefig.dpi: 500
-savefig.pad_inches : 0.02
+savefig.dpi: 200
+savefig.pad_inches  : 0.02
 savefig.bbox        : tight
+
+#figure.autolayout: True
+
 
 # ETC
 
